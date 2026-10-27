@@ -1,0 +1,5 @@
+# dsh-alive — bundle layer.
+# 安装成包（或 dsh plugin add）时，这一层把插件插进 profile 的 composition。
+- insert:
+    - id: dsh-alive
+      name: 'dsh-alive'

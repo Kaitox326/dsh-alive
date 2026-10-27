@@ -1,0 +1,39 @@
+{
+  "name": "dsh-alive",
+  "version": "0.1.0",
+  "description": "活人感：不回、节奏、状态外置、脏记忆、差序对待。",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "persona",
+    "alive"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=3.0.0",
+    "@deepseek-ai/dsh-llm": ">=0.1.2-rc.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.2-rc.1",
+    "@deepseek-ai/schemastery": ">=3.0.0"
+  }
+}
